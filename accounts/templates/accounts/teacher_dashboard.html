@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher Dashboard</title>
+</head>
+
+<body>
+
+    <h1>Teacher Dashboard</h1>
+
+    <h2>Welcome, {{ request.user.username }}</h2>
+
+    <p>You are logged in as <strong>TEACHER</strong>.</p>
+
+    <hr>
+
+    <h3>Teacher Access</h3>
+
+    <ul>
+        <li>View Student Requests</li>
+        <li>Approve or Reject Requests</li>
+        <li>View Student Information</li>
+    </ul>
+
+    <a href="{% url 'logout' %}">Logout</a>
+
+</body>
+</html>
